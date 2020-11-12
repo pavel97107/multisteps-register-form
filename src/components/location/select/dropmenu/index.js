@@ -11,7 +11,7 @@ export default React.memo(function ({
     return () => {
       document.removeEventListener("mousedown", handleClickDisplayOutSide);
     };
-  });
+  }, []);
 
   return (
     <div className="dropmenu">
