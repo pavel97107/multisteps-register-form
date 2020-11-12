@@ -13,14 +13,14 @@ export const Select = React.memo(
 
     function showDropMenu() {
       if (data.length < 1) {
-        return setDefaultTitle("Выберите сначало страну)");
+        return setDefaultTitle("Select the country first");
       }
       setShowMenu((prevState) => !prevState);
     }
 
     useEffect(() => {
       if (typeof cityValue === "string" && cityValue === "") {
-        setDefaultTitle("Выберите город");
+        setDefaultTitle(defaultValue);
       }
     }, [cityValue]);
 

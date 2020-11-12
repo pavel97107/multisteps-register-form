@@ -25,13 +25,13 @@ export const Location = React.memo(
         <Select
           onClick={handlerClickCountry}
           data={countr1y}
-          defaultValue={"Выберите страну"}
+          defaultValue={"Choose the country"}
         />
         <Select
           cityValue={cityValue}
           onClick={handlerClickCity}
           data={newFliterArrayCities}
-          defaultValue={"Выберите город"}
+          defaultValue={"Select city"}
         />
       </div>
     );
