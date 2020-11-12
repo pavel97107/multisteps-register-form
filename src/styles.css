@@ -1,13 +1,66 @@
-body {
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #ffd4fd;
+  font-family: 'Roboto', sans-serif;
 }
+
+.App {
+  max-width: 400px;
+  margin: 5% auto;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  border-radius: 5px;
+  padding: 50px 25px 75px 25px;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.navigate {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.navigate button {
+  width: 100px;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:active {
+  box-shadow: inset 1px 1px 11px 2px #000000;
+}
+
+.navigate__prev {
+  background-color: #ccc;
+  font-size: 16px;
+}
+
+.navigate__next {
+  background-color: blueviolet;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+

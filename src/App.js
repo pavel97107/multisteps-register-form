@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      step: 0,
+      pages: [
+        { title: "Personal Data", isActive: true, isCompleted: false },
+        { title: "Confidential data", isActive: false, isCompleted: false },
+        { title: "About myself", isActive: false, isCompleted: false },
+        { title: "Finish", isActive: false, isCompleted: false },
+      ],
+      data: {
+        name: "",
+        surname: "",
+        email: "",
+        password: "",
+        sex: "man",
+        tel: "",
+        country: "",
+        city: "",
+        skills: [],
+      },
+      errors: {
+        name: "",
+        surname: "",
+        email: "",
+        password: "",
+        tel: "",
+      },
+    };
+  }
 }
-
-export default App;
