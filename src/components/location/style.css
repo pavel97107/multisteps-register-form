@@ -1,0 +1,49 @@
+.select {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.select__title {
+  border: 1px solid;
+  border-color: #ccc;
+  background: transparent;
+  padding: 12px;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 100%;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.select__title:hover {
+  border-color: blueviolet;
+}
+
+/* drop__menu */
+
+.dropmenu {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  border: 1px solid;
+  border-color: #ccc;
+  border-radius: 3px;
+  z-index: 1000;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.dropmenu__option {
+  padding: 12px;
+  width: 100%;
+  max-width: 100%;
+  background: white;
+  z-index: 2000;
+  border-bottom: 1px solid #ccc;
+}
+.dropmenu__option:hover {
+  background-color: #efd9ff;
+}
+.dropmenu__option:last-child {
+  border: none;
+}
