@@ -1,3 +1,4 @@
+import React from 'react'
 import { PersonalData, ConfidentialData, AboutMySelf, Finish } from "./pages";
 import Steps from "./step";
 import "./styles.css";
