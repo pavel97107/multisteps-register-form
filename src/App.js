@@ -4,7 +4,7 @@ import Steps from "./step";
 import "./styles.css";
 import validate from "./validate";
 
-export default class App extends React.Component {
+      export default class App extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -67,6 +67,7 @@ export default class App extends React.Component {
       data: { ...state.data, skills: [...state.data.skills, item] },
     }));
   }
+
 
   prevStep = () => {
     if (this.state.step <= 0) return;
